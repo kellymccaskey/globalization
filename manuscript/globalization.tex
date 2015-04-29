@@ -1,0 +1,151 @@
+%
+\documentclass[12pt,letterpaper]{article}
+
+% The usual packages
+\usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{ntheorem}
+\usepackage{longtable}
+\usepackage{indentfirst}
+\usepackage{qtree}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fullpage}
+\usepackage{endnotes}
+\usepackage[sort]{natbib}
+\citestyle{agsm}
+\renewcommand\harvardand{and}
+\usepackage{breakcites}
+\usepackage{multirow}
+\usepackage{tabulary}
+\usepackage{rotating}
+
+% Math
+\newtheorem{hyp}{Hypothesis} 
+\newcounter{subhyp} 
+\newcommand{\subhyp}{ 
+  \setcounter{subhyp}{0} 
+  \renewcommand\thehyp{\protect\stepcounter{subhyp} 
+  \arabic{hyp}\alph{subhyp}\protect\addtocounter{hyp}{-1}} 
+} 
+\newcommand{\normhyp}{ 
+  \renewcommand\thehyp{\arabic{hyp}} 
+  \stepcounter{hyp} 
+} 
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{claim}{Claim}
+\newenvironment{proof}[1][Proof]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{definition}[1][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{example}[1][Example]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Remark]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+% enable comments in pdf
+\newcommand{\kelly}[1]{\textcolor{blue}{#1}}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+%% Draft
+% Title
+\begin{document}
+\begin{center}
+{\LARGE Explaining Regime Stability Through Globalization}\\\vspace{2mm}
+{ \large Factor Endowments and Their Influence on Electoral Volatility}\\
+\vspace{10mm}
+Kelly McCaskey\symbolfootnote[1]{Kelly McCaskey is a Ph.D. student in the Department of Political Science at the University at Buffalo, SUNY (kellymcc@buffalo.edu). 
+%thanks to 
+%\\\vspace{3mm}
+}
+\end{center}
+
+% Abstract
+%\newpage
+%\begin{quote}
+%\begin{center} Abstract\end{center}
+%abstract
+%\end{quote}
+
+
+% Body
+%\newpage
+\doublespace
+% \subsection*{Introduction}
+In the broadest sense, how does globalization affect regime stability? Specifically, do different aspects of globalization, such as market or financial integration, influence the stability of the regime in different ways? One way to interpret regime stability is electoral volatility. Generally, when we speak of a change in regime, we mean party system change. This requires that we can concisely map out the levels of parliament and government, the level of the party in an organizational sense, and the level of the electorate, which can then be defined as the total set of changes in interaction and competition patterns between these three levels as well as within them. 
+
+However, we can delve deeper into the event of party system change by studying electoral volatility. Because party systems are a sum of their parts, this type of analysis allows us study the electoral party system in terms of the number of parties contesting the election and the distribution of the parties' electoral strength. Electoral volatility, then, is defined as the net change within the electoral party system as a result of individual vote transfers \citep{Pedersen1979}. 
+
+So what, then, contributes to an increase or decrease in electoral volatility? By focusing specifically on globalization, we can see the political consequences that occur as a result of shifts in economic factors. Additionally, by including factor endowments in my analysis of globalization, we can also not only how changes in economic factors affect regime stability but how different types of economies that can determine class politics also have influence.
+
+I proceed with a theoretical discussion of the relationship between globalization and factor endowments and how that relationship can be linked to changes in the political system. In particular, I focus on electoral volatility in order to analyze regime stability from the bottom up. I propose by hypothesis and then describe my data and model. Third, I interpret the results and conclude with the implications of these results as well as avenues for extension. 
+
+\subsection*{Globalization, Factor Endowments, \& Regime Stability}
+The Heckscher-Ohlin model of international trade predicts that countries will export goods that intensively use their abundant factors of production while countries will import goods that intensively use factors that are scarce. Likewise, the Stolper-Samuelson theorem describes the linkage between relative prices of output and relative factor awards \citep{StolperSamuelson1941}. This theorem predicts that international trade will increase the incomes of the owners of abundant factors while reducing the incomes of owners of relatively scarce factors. The Stolper-Samuelson extension shows that protection from trade benefits those owners of factors in which the society is relatively poorly endowed, in comparison to the rest of the world. Protection from trade, however, harms those owners of relatively abundant factors. Conversely, trade liberalization is opposed by owners of scarce factors and favored by those who enjoy ownership of an abundant factor. The traditional model of factor endowments includes land, labor, and capital. The theorem also assumes that while factors of production are internationally immobile, they are mobile within the domestic economy. Additionally, this implies that all owners of the same factor also share the same trade policy preferences. 
+
+So, in a society that is rich in labor but poor in capital, trade protection would benefit owners of capital while harm labor-intensive industries. Similarly, the owners of capital would be harmed if the society liberalized trade while the owners of labor would benefit. Of domestic political processes, we can assume that those who will benefit from a potential change will do what they can to continue or accelerate it while those who are harmed will do all in their power to halt it and that those who experience a sudden in crease in wealth and income will now be enabled and motivated to expand their political influence. Following these assumptions, we can also assume, with regard to international trade, as does \citet{Rogowski1987}, that those who benefit from some exogenous change will also seek to continue and expand free trade, while those that do not will seek protection. Additionally, both those who benefit or have the potential to economically benefit from exogenous changes in international trade also will increase their political power. 
+
+Following \citet{Rogowski1987}, I use an oversimplified theory of factor endowments in which an economy cannot be rich in both land and labor. This creates four categories for each combination: capital rich, land rich, and labor poor; capital rich, land poor, and labor rich; capital poor, land rich, and labor poor; and capital poor, land poor, and labor rich. This makes it possible to theoretically discuss how increasing exposure to trade results in societal conflicts and translate these conflicts into changes in the party system. The categorization is demonstrated in Table \ref{tab:categories}.
+
+\singlespace
+\begin{table}[H]
+\small
+\begin{center}
+\begin{tabular}{ r | c | c |}
+\multicolumn{1}{r}{}
+ &  \multicolumn{1}{c}{High Land-Labor Ratio}
+ & \multicolumn{1}{c}{Low Land-Labor Ratio} \\
+\cline{2-3}
+Advanced Economy & Capital rich, land rich, labor poor & Capital rich, land poor, labor rich \\
+	& Class conflict & Urban-rural conflict \\
+\cline{2-3}
+Less-Developed Economy & Capital poor, land rich, labor poor & Capital poor, land poor, labor rich \\
+	& Urban-rural conflict	&Class conflict \\
+\cline{2-3}
+\end{tabular}\caption{Different factor endowment scenarios}\label{tab:categories}
+\end{center}
+\end{table}
+\doublespace
+\normalsize
+
+In both economies that are (1) capital rich, labor rich and land poor (Table \ref{tab:categories}, top right quadrant), and (2) capital poor, labor poor, and land rich (Table \ref{tab:categories}, lower left quadrant), we would tend to see urban-rural conflict. However, these conflicts would be in reverse from each other. In the first scenario, expanding trade will benefit both capitalists and workers, causing them to favor free trade, while harming those that work in agriculture, who would favor protectionist policies. Thus, capitalists and workers will work together in order to expand their political influence. In the second scenario, both capital and labor seek protectionist policies after being harmed by trade expansion while agriculturalists favor trade liberalization. Both of these situations see urbanites (capitalists and workers) pitted against farmers, causing urban-rural conflict. 
+
+Increasing the liberalization of trade in the remaining quadrants potentially incites class conflict. So, in an economy (3) that is capital rich, labor poor, and land rich (Table \ref{tab:categories}, upper left quadrant) will see their capitalists, capital-intensive industries, and agricultural industries profit from free trade while workers and labor-intensive industries will falter and favor protectionism. Thus, workers lose what little political influence they had. Likewise, in the last combination of factor endowments, in a society that is (4) poor in capital, rich in labor, and poor in land, the workers will have the most political influence over the capitalists and the agriculturalists and will pursue trade expansionist policies. 
+
+Class conflict is even more likely when the levels of factor mobility are relatively high while industry-based conflict is more likely when levels of factor-mobility are relatively low \citep{Hiscox2001}. Factor-mobility refers to to the ability to which owners of factors of production are able to move between domestic industries. As \citet{Hiscox2001} puts it, the income effects of trade will divide individuals along class cleavages, dependent upon factor, when factors are mobile between industries regardless of industry. Conversely, when factors are immobile between industries, owners of the same factors will be set up against each other over policy issues. In either situation, factor owners will want to receive the most efficient gains and have policy preferences that allow for this to happen. 
+
+In a liberalizing economy, increases in foreign direct investment and international trade that are relatively small in comparison to the overall size of the domestic economy can potentially trigger large effects on both factor and product prices \citep{Wood1994, Rodrik1997, Feenstra1998}. This causes globalization to have very large effects on domestic economies and politics even if the majority of investment is national and most goods and services are both produced in and dominate the domestic market.
+
+So what does this mean? First of all, voters are going to vote for the candidate or party that will provide them with the most political influence. They will also vote for the candidate or party that will provide them with the greatest economic gains. This is where we now turn to theories of economic voting, in which voters pick candidates or parties on the basis of their economic influence. Particularly, incumbents who were in power during times of economic prosperity are rewarded on election day, while those who are perceived to be responsible for economic downturns are punished. \citet{Gourevitch1986} claims that the mechanism through which changes in the world market are brought into the realm of domestic politics is a process of transmission through changes in prices paid and received by the domestic producer. Additionally, he emphasizes the possibility for politicians to build different domestic coalitions of interests from the groups mobilized by changes induced by the fluctuating international economy. 
+
+In fact, \citet{Lewis-Beck1986} finds that the influence of economic evaluations of incumbents at least approaches, and sometimes even surpasses, that of traditional vote determinants in his analysis of economic voting in Britain, France, Germany, and Italy. He also finds that economic perceptions seem to be more important than social cleavages of class and religion in all cases but Italy. 
+
+\citet{Remmer1993} asks what factors condition the relationship between macroeconomic management and elections? She finds that, absent in most traditional business cycle literature, elections may actually enhance the the ability of the government to appropriately respond to macroeconomic challenges. Rather than the traditional political business cycle, \citet{Remmer1993}, posits the idea of a political capital model in which electoral victory strengthens the power of government authorities and elections become stimulants for more effective policy performance rather than impediments to appropriate macroeconomic management. To this, we can see how cleavages along factor endowments can both influence and be influenced by election outcomes. 
+
+\begin{hyp}
+A decrease in international trade will cause greater electoral volatility in a labor-abundant economy.
+\end{hyp}
+
+\begin{hyp}
+An increase in capital flows will cause less electoral volatility in a labor-abundant economy.
+\end{hyp}
+
+Likewise, we can reverse these hypotheses to an increase in international trade will cause less electoral volatility in a capital-abundant economy while a decrease in capital flows will cause greater volatility in a capital-abundant economy. On a more micro level, we would also expect that if electoral volatility increased in a labor abundant economy due to a decrease in international trade, that it would be toward more leftist policies, as we would expect that electoral volatility favoring a capital abundant would lean to the right. This beyond the data I have currently, this would be an obvious extension. 
+\subsection*{Data and Measures}
+
+\subsection*{Results}
+
+\subsection*{Conclusion}
+
+%% References
+\newpage
+\bibliographystyle{apsr_fs}
+\bibliography{bibliography}
+
+\end{document}
